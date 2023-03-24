@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "temporal-300"
+version = "0.1.0"
+description = ""
+authors = ["Yasin Zähringer <yasin@paradime.io>"]
+readme = "README.md"
+packages = [{include = "temporal_300"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+temporalio = "1.1.0"
+sentry-sdk = "^1.17.0"
+pydantic = {extras = ["dotenv"], version = "^1.10.6"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
